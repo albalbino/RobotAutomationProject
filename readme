@@ -1,0 +1,39 @@
+Tutorial de Execução do Projeto | RobotAutomationProject
+
+Passo 1: Pré-requisitos
+
+Python 3.x: Certifique-se de ter o Python 3 instalado. Você pode baixá-lo em python.org. PIP: O PIP geralmente é instalado junto com o Python. Verifique com pip --version. Google Chrome: Certifique-se de ter o Google Chrome instalado, pois usaremos o ChromeDriver para automação. Terminal ou Prompt de Comando: Um terminal ou prompt de comando para executar os comandos.
+
+Passo 2: Instalar Dependências Abra um terminal ou prompt de comando e execute os seguintes comandos:
+
+pip install robotframework pip install robotframework-seleniumlibrary pip install webdrivermanager
+
+Passo 3: Configurar o ChromeDriver Instale o ChromeDriver usando o webdrivermanager:
+
+webdrivermanager chrome --linkpath /usr/local/bin Passo 4: Clonar o Repositório Clone o repositório do projeto do GitHub para a sua máquina local:
+
+git clone https://github.com/albalbino/RobotAutomationProject.git cd insurance_test_project
+
+Passo 5: Executar os Testes Para executar os testes, execute o seguinte comando no terminal na raiz do projeto:
+
+robot -d results tests/
+
+Passo 6: Verificar Relatórios Após a execução dos testes, os resultados serão salvos na pasta results. Você pode verificar dois tipos de relatórios:
+
+Relatórios Nativos do Robot Framework: Abra os arquivos log.html e report.html na pasta results para ver os resultados detalhados dos testes. Allure Report (Opcional): Para gerar e visualizar um relatório mais detalhado usando o Allure, siga os passos abaixo:
+
+Instalar o Allure Commandline Se você ainda não tiver instalado o Allure, siga as instruções para instalar o Allure Commandline conforme o seu sistema operacional aqui.
+
+Gerar e Visualizar o Relatório Allure Execute os testes com o argumento -d results/allure para salvar os resultados em um diretório separado para o Allure:
+
+robot -d results/allure tests/ Navegue até o diretório results/allure:
+
+cd results/allure Gere o relatório Allure:
+
+allure generate --clean Abra o relatório Allure no seu navegador padrão:
+
+allure open
+
+Conclusão
+
+Este tutorial fornece uma base sólida para configurar, executar e verificar um projeto de testes automatizados usando o Robot Framework. Certifique-se de ajustar os caminhos e configurações conforme necessário para o seu ambiente específico.

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-18T17:44:59.739823" rpa="false" schemaversion="5">
+<suite id="s1" name="WebFormTest" source="/home/ale/Área de Trabalho/Projetos/RobotAutomationProject/WebFormTest.robot">
+<test id="s1-t1" name="Preencher Todos os Campos dos Formularios" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:44:59.807650" level="INFO">Opening browser 'chrome' to base url 'https://sampleapp.tricentis.com/101/app.php'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-18T17:44:59.807462" elapsed="4.637403"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-07-18T17:45:04.445609" elapsed="0.017498"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-18T17:45:04.463705" elapsed="0.094120"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=make</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-18T17:45:04.558854" elapsed="0.084035"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:04.645224" level="INFO">Selecting options from selection list 'id=make' by label Toyota.</msg>
+<arg>id=make</arg>
+<arg>Toyota</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-07-18T17:45:04.644054" elapsed="0.212977"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:04.858228" level="INFO">Selecting options from selection list 'id=model' by label Scooter.</msg>
+<arg>id=model</arg>
+<arg>Scooter</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-07-18T17:45:04.857682" elapsed="0.136650"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:04.995400" level="INFO">Typing text '500' into text field 'id=cylindercapacity'.</msg>
+<arg>id=cylindercapacity</arg>
+<arg>500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:04.994892" elapsed="0.185212"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:05.181349" level="INFO">Typing text '150' into text field 'id=engineperformance'.</msg>
+<arg>id=engineperformance</arg>
+<arg>150</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:05.180800" elapsed="0.254605"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:05.437260" level="INFO">Typing text '10/10/2010' into text field 'id=dateofmanufacture'.</msg>
+<arg>id=dateofmanufacture</arg>
+<arg>10/10/2010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:05.436402" elapsed="0.377353"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:05.814897" level="INFO">Selecting options from selection list 'id=numberofseats' by label 4.</msg>
+<arg>id=numberofseats</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-07-18T17:45:05.814346" elapsed="0.170546"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:05.985937" level="INFO">Clicking element 'xpath=//label[@class='ideal-radiocheck-label'][contains(.,'Yes')]'.</msg>
+<arg>xpath=//label[@class='ideal-radiocheck-label'][contains(.,'Yes')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:05.985411" elapsed="0.102952"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:06.090222" level="INFO">Selecting options from selection list 'id=fuel' by label Petrol.</msg>
+<arg>id=fuel</arg>
+<arg>Petrol</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-07-18T17:45:06.089313" elapsed="0.123494"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:06.214216" level="INFO">Typing text '150' into text field 'id=payload'.</msg>
+<arg>id=payload</arg>
+<arg>150</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:06.213512" elapsed="0.151049"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:06.365825" level="INFO">Typing text '200' into text field 'id=totalweight'.</msg>
+<arg>id=totalweight</arg>
+<arg>200</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:06.365206" elapsed="0.188664"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:06.555277" level="INFO">Typing text '1500' into text field 'id=listprice'.</msg>
+<arg>id=listprice</arg>
+<arg>1500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:06.554572" elapsed="0.241752"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:06.797530" level="INFO">Typing text 'ABC123' into text field 'id=licenseplatenumber'.</msg>
+<arg>id=licenseplatenumber</arg>
+<arg>ABC123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:06.796969" elapsed="0.214475"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:07.012806" level="INFO">Typing text '100000' into text field 'id=annualmileage'.</msg>
+<arg>id=annualmileage</arg>
+<arg>100000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:07.012260" elapsed="0.251638"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:07.265095" level="INFO">Clicking element '//button[@name='Next (Enter Insurant Data)'][contains(.,'Next »')]'.</msg>
+<arg>//button[@name='Next (Enter Insurant Data)'][contains(.,'Next »')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:07.264573" elapsed="0.163190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=firstname</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-18T17:45:07.428388" elapsed="0.051488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:07.481501" level="INFO">Typing text 'Alexandre' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Alexandre</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:07.480699" elapsed="0.198800"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:07.680793" level="INFO">Typing text 'Lopes' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Lopes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:07.680206" elapsed="0.200074"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:07.881920" level="INFO">Typing text '10/10/2000' into text field 'id=birthdate'.</msg>
+<arg>id=birthdate</arg>
+<arg>10/10/2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T17:45:07.881122" elapsed="0.318933"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-07-18T17:45:08.201118" level="FAIL">Keyword 'SeleniumLibrary.Select Radio Button' expected 2 arguments, got 1.</msg>
+<arg>xpath=//input[@name='Gender' and @value='Male']</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2024-07-18T17:45:08.200667" elapsed="0.000691">Keyword 'SeleniumLibrary.Select Radio Button' expected 2 arguments, got 1.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=streetaddress</arg>
+<arg>123 Elm Street</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.201822" elapsed="0.000087"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=country</arg>
+<arg>United States</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.202289" elapsed="0.000072"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=zipcode</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.202765" elapsed="0.000067"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=city</arg>
+<arg>Anytown</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.203134" elapsed="0.000062"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=occupation</arg>
+<arg>Employee</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.203502" elapsed="0.000063"/>
+</kw>
+<kw name="Click Element xpath=//span[contains(@class,'ideal-check checked')]">
+<status status="NOT RUN" start="2024-07-18T17:45:08.204000" elapsed="0.000072"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=website</arg>
+<arg>soundcloud.com/aledavibe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.204372" elapsed="0.000064"/>
+</kw>
+<kw name="Click Element xpath=//button[@type='button'][contains(.,'Open')]">
+<status status="NOT RUN" start="2024-07-18T17:45:08.204812" elapsed="0.000067"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<arg>${UPLOAD_FIELD}</arg>
+<arg>${FILE_PATH}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.205208" elapsed="0.000080"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.205725" elapsed="0.000098"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=nextenterproductdata</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.206302" elapsed="0.000082"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=startdate</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.206812" elapsed="0.000082"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=startdate</arg>
+<arg>01/01/2023</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.207257" elapsed="0.000079"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=insurancesum</arg>
+<arg>3.000.000,00</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.207700" elapsed="0.000111"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=meritrating</arg>
+<arg>Bonus 3</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.208259" elapsed="0.000106"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=damageinsurance</arg>
+<arg>Full Coverage</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.208763" elapsed="0.000094"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='Optional Products' and @value='Euro Protection']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.209270" elapsed="0.000086"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=courtesycar</arg>
+<arg>Yes</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.209826" elapsed="0.000106"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=nextselectpriceoption</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.210601" elapsed="0.000150"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='Select Option' and @value='Silver']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.211411" elapsed="0.000101"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='Select Option' and @value='Silver']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.211965" elapsed="0.000091"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=nextsendquote</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.212450" elapsed="0.000087"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.212936" elapsed="0.000093"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>alexandre.lbti@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.213437" elapsed="0.000094"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=phone</arg>
+<arg>83999178913</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.213974" elapsed="0.000097"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>johndoe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.214476" elapsed="0.000085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.215037" elapsed="0.000085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=confirmpassword</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.215506" elapsed="0.000079"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=Comments</arg>
+<arg>This is a test quote.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.216018" elapsed="0.000092"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=sendemail</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.216574" elapsed="0.000097"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-18T17:45:08.217106" elapsed="0.000095"/>
+</kw>
+<status status="FAIL" start="2024-07-18T17:44:59.806911" elapsed="8.411032">Keyword 'SeleniumLibrary.Select Radio Button' expected 2 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2024-07-18T17:44:59.740469" elapsed="8.479405"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="WebFormTest">WebFormTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
